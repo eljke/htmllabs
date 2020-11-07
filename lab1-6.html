@@ -18,8 +18,7 @@
     <h3>Форма №2</h3>
     <form>
         <p>Число: <input type="number"/></p>
-        <p><input type="checkbox" />
-        <span>Я прочитал и согласен с условиями пользовательского соглашения</span>
+        <p><input type="checkbox" id="nmbr"><label for="nmbr">Я прочитал и согласен с условиями пользовательского соглашения</label>/>
         </p>
         <input type="submit" value="OK" />
     </form>
@@ -27,10 +26,8 @@
     <h3>Регистрация</h3>
     <form>
         <span>Пол: </span>
-        <input name="sex" type="radio" required/>
-        <span>Мужской</span>
-        <input name="sex" type="radio" required/>
-        <span>Женский</span>   
+        <input name="sex" type="radio" required id="gender1"><label for="gender1">Мужской</label>
+        <input name="sex" type="radio" required id="gender2"><label for="gender2">Женский</label> 
     </form>
    
     <form>
@@ -53,8 +50,7 @@
         <p>Пароль: <input type="password" required/></p>
         <p>Подтвердите пароль: <input type="password" required/></p>
         <p>
-            <input type="checkbox"/>
-            <span>Учусь платно</span>
+            <input name="pay" type="radio" required id="pay"><label for="pay">Учусь платно</label>
         </p>
             <input type="submit" value="Зарегистрироваться" />
         </form>
